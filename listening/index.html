@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SKP IELTS — Listening</title>
+<style>
+:root{--bg:#f3f5f8;--card:#fff;--ink:#172033;--muted:#667085;--line:#dfe3ea;--blue:#1769e0;--blue2:#0f56bf;--green:#15803d;--red:#c62828;--amber:#a15c00;--shadow:0 3px 14px rgba(16,24,40,.08)}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}button,input,select{font:inherit}.hidden{display:none!important}
+.top{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--line)}.topin{max-width:1180px;margin:auto;min-height:56px;padding:8px 12px;display:flex;align-items:center;gap:8px}.brand{font-weight:800}.spacer{flex:1}.btn{border:1px solid #cfd5df;background:#fff;color:#1d2939;border-radius:7px;padding:8px 12px;cursor:pointer}.btn:hover{background:#f8fafc}.btn.primary{background:var(--blue);color:#fff;border-color:var(--blue)}.btn.danger{background:#b42318;color:#fff;border-color:#b42318}.btn.small{padding:6px 9px;font-size:13px}
+.wrap{max-width:1180px;margin:auto;padding:14px 12px 90px}.hero{background:#fff;border:1px solid var(--line);padding:22px;border-radius:10px;box-shadow:var(--shadow);margin-bottom:14px}.hero h1{margin:0 0 6px;font-size:27px}.hero p{margin:0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:12px}.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px;box-shadow:var(--shadow)}.card h3{margin:0 0 5px}.card p{color:var(--muted);font-size:13px;min-height:36px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.exam{background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:12px;margin-bottom:10px}.examline{display:flex;gap:10px;align-items:center}.examtitle{font-weight:800;font-size:18px}.partbar{display:flex;gap:6px;overflow:auto;margin-top:10px}.part{border:1px solid #cfd5df;background:#fff;border-radius:7px;padding:7px 13px;white-space:nowrap;cursor:pointer}.part.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.audio{background:#fff;border:1px solid var(--line);border-radius:9px;padding:8px 10px;box-shadow:var(--shadow);position:sticky;top:56px;z-index:70;margin-bottom:10px}.audio small{display:block;color:var(--muted);margin-bottom:4px}.audio audio{width:100%;height:42px}
+.paper{background:#fff;border:1px solid var(--line);border-radius:9px;box-shadow:var(--shadow);padding:22px;line-height:1.58}.paper .heading{font-size:18px;font-weight:800;margin:18px 0 9px}.paper .heading:first-child{margin-top:0}.paper .instruction{font-weight:700;margin:4px 0;color:#344054}.paper .textline{margin:7px 0}.paper .qline{margin:8px 0}.paper .spacer{height:8px}.paper .qnum{display:inline-flex;min-width:25px;height:24px;padding:0 6px;align-items:center;justify-content:center;background:#eef2f6;border:1px solid #d5dbe3;border-radius:5px;font-weight:800;margin:0 3px;vertical-align:middle}.paper .inline-input{display:inline-block;width:150px;max-width:46vw;border:0;border-bottom:2px solid #475467;border-radius:0;padding:2px 5px;background:#fff;outline:0}.paper .inline-input:focus{border-bottom-color:var(--blue);background:#eff6ff}.paper .choices{display:flex;gap:7px;flex-wrap:wrap;margin:6px 0 4px}.paper .opt{display:inline-flex;align-items:center;gap:5px;padding:5px 9px;border:1px solid #d0d5dd;border-radius:7px;background:#fff;cursor:pointer}.paper .option-static{margin:4px 0 4px 8px}.paper .matching{display:inline-flex;align-items:center;border:1px dashed #98a2b3;border-radius:7px;padding:4px 7px;background:#f8fafc}.paper select{border:1px solid #98a2b3;border-radius:6px;padding:5px 8px;background:#fff}.generated-control{margin:12px 0;padding:10px 12px;border:1px solid #d6dce5;border-radius:8px;background:#f8fafc}.generated-control .gq{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:7px 0}.generated-control .gnum{font-weight:800;min-width:30px}.generated-control .glabel{color:#344054;font-weight:600}.generated-control .gopts{display:flex;gap:5px;flex-wrap:wrap}.generated-control label{display:inline-flex;gap:4px;align-items:center;border:1px solid #d0d5dd;border-radius:6px;padding:4px 7px;background:#fff}.generated-control select{min-width:105px}
+.bottom{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:10px}.status{font-size:13px;color:var(--muted)}
+.qpanel{position:fixed;right:12px;bottom:12px;z-index:120;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 35px rgba(16,24,40,.2);width:min(370px,calc(100vw - 24px));max-height:70vh;overflow:auto;padding:10px}.qpanelhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.qgrid{display:grid;grid-template-columns:repeat(10,1fr);gap:5px}.qbtn{border:1px solid #d0d5dd;background:#fff;border-radius:6px;padding:6px 0;cursor:pointer;font-size:12px}.qbtn.answered{background:#eaf2ff;border-color:#8bb5f2}.qbtn.current{outline:2px solid var(--blue)}
+.result{background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:24px}.band{font-size:50px;font-weight:900;text-align:center}.result h2{text-align:center}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}.stat{border:1px solid var(--line);border-radius:8px;text-align:center;padding:11px}.stat b{font-size:24px;display:block}.reviewbar{position:sticky;top:56px;z-index:60;background:rgba(243,245,248,.97);padding:8px 0;display:flex;gap:6px;overflow:auto}.rtab{white-space:nowrap;border:1px solid #cfd5df;background:#fff;border-radius:7px;padding:7px 10px;cursor:pointer}.rtab.active{background:var(--blue);color:#fff;border-color:var(--blue)}.reviewcard{background:#fff;border:1px solid var(--line);border-left:5px solid #98a2b3;border-radius:8px;padding:13px;margin:8px 0}.reviewcard.ok{border-left-color:var(--green)}.reviewcard.bad{border-left-color:var(--red)}.reviewcard.skip{border-left-color:var(--amber)}.reviewhead{display:flex;justify-content:space-between;gap:8px}.badge{font-size:12px;font-weight:800;padding:3px 8px;border-radius:999px}.badge.ok{background:#dcfce7;color:#166534}.badge.bad{background:#fee2e2;color:#991b1b}.badge.skip{background:#fef3c7;color:#92400e}.answerbox{margin-top:8px;padding:9px;background:#f8fafc;border-radius:7px}.transcript{white-space:pre-wrap;background:#111827;color:#e5e7eb;border-radius:8px;padding:15px;line-height:1.6;overflow:auto}.reviewActions{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+@media(max-width:650px){.topin{min-height:52px}.brand{font-size:14px}.wrap{padding:9px 7px 75px}.paper{padding:15px}.stats{grid-template-columns:repeat(2,1fr)}.audio{top:52px}.reviewbar{top:52px}.examtitle{font-size:16px}.qgrid{grid-template-columns:repeat(8,1fr)}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin"><button class="btn" id="homeBtn">← Home</button><div class="brand">🎧 SKP IELTS Listening</div><div class="spacer"></div><button class="btn" id="focusBtn">⛶ Focus</button></div></header>
+<main class="wrap"><div id="app"></div></main>
+<script src="data.js"></script>
+<script>
+(()=>{'use strict';
+const DATA=window.LISTENING_DATA||[],app=document.getElementById('app');
+const S={test:null,part:1,practice:false,answers:{},screen:'library',result:null,reviewPart:1,reviewMode:false};
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const testById=id=>DATA.find(t=>String(t.id)===String(id));
+const sectionOf=q=>Math.ceil(Number(q)/10); const key=q=>'q'+q;
+function setA(q,v){S.answers[key(q)]=v} function getA(q){return S.answers[key(q)]??''}
+function norm(v){return String(v??'').trim().toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g,' ')}
+function variants(raw){
+ let s=String(raw??'').trim(); if(!s)return [];
+ let out=[s];
+ // Optional/clarifying parenthetical notation used in answer keys.
+ let noParen=s.replace(/\([^)]*\)/g,'').replace(/\s+/g,' ').trim(); if(noParen&&noParen!==s)out.push(noParen);
+ let opt=s.replace(/\(([^)]*)\)/g,'$1').replace(/\s+/g,' ').trim(); if(opt)out.push(opt);
+ if(/^[A-Za-z](?:\s*,\s*[A-Za-z])+/.test(s)){s.split(',').forEach(x=>out.push(x.trim()))}
+ if(/^\w+\(-\)\w+/.test(s))out.push(s.replace('(-)','-'),s.replace('(-)',''),s.replace('(-)',' '));
+ return [...new Set(out.map(norm).filter(Boolean))];
+}
+function accepted(q){let a=S.test?.answers?.[q];if(!Array.isArray(a))a=[a];return a.flatMap(variants)}
+function answered(q){let v=getA(q);return Array.isArray(v)?v.some(x=>String(x).trim()):String(v??'').trim()!==''}
+function isCorrect(q){
+ const good=accepted(q),v=getA(q);
+ if(Array.isArray(v)){
+  const mine=v.map(norm).filter(Boolean);
+  if(!mine.length)return false;
+  const goodLetters=good.filter(x=>/^[a-z]$/.test(x));
+  if(goodLetters.length){return mine.length===goodLetters.length && mine.every(x=>goodLetters.includes(x)) && goodLetters.every(x=>mine.includes(x));}
+  return mine.some(x=>good.includes(x));
+ }
+ return good.includes(norm(v));
+}
+function bandFor(n){if(n>=39)return 9;if(n>=37)return 8.5;if(n>=35)return 8;if(n>=33)return 7.5;if(n>=30)return 7;if(n>=27)return 6.5;if(n>=23)return 6;if(n>=19)return 5.5;if(n>=15)return 5;if(n>=13)return 4.5;if(n>=10)return 4;if(n>=8)return 3.5;if(n>=6)return 3;if(n>=4)return 2.5;if(n>=2)return 2;if(n>=1)return 1;return 0}
+function audioSrc(t,p){return t.audio?.[p-1]||''}
+function save(root){$$('[data-q]',root).forEach(el=>{let q=+el.dataset.q;if(!q)return;if(el.type==='radio'){if(el.checked)setA(q,el.value)}else if(el.type==='checkbox'){let a=Array.isArray(getA(q))?getA(q):[];if(el.checked&&!a.includes(el.value))a.push(el.value);if(!el.checked)a=a.filter(x=>x!==el.value);setA(q,a)}else setA(q,el.value)})}
+function restore(root){$$('[data-q]',root).forEach(el=>{let v=getA(+el.dataset.q);if(el.type==='radio')el.checked=String(v)===String(el.value);else if(el.type==='checkbox')el.checked=Array.isArray(v)&&v.includes(el.value);else el.value=Array.isArray(v)?v.join(', '):v})}
+function bind(root){$$('[data-q]',root).forEach(el=>{el.addEventListener('input',()=>{save(root);updateQPanel()});el.addEventListener('change',()=>{save(root);updateQPanel()})})}
+function groupControls(t,p,html){
+ const groups=(t.groups||[]).filter(g=>g.numbers?.length && sectionOf(g.numbers[0])===p);
+ let out=html;
+ for(const g of groups){
+  const nums=g.numbers, type=g.type, have=nums.some(q=>out.includes('data-q="'+q+'"'));
+  if(have || type==='map')continue;
+  let marker=esc(g.header||('Questions '+nums[0]+'–'+nums[nums.length-1]));
+  let pos=out.indexOf(marker); if(pos<0){continue}
+  let end=out.indexOf('</div>',pos); if(end<0)continue; end+=6;
+  let box='<div class="generated-control"><div><b>'+esc(g.header||'Answer')+'</b></div>';
+  if(type==='single_choice'){
+    nums.forEach(q=>{box+='<div class="gq"><span class="gnum">'+q+'</span><div class="gopts">'+(g.options||['A','B','C']).map(o=>'<label><input type="radio" name="gq'+q+'" data-q="'+q+'" value="'+esc(o)+'"> '+esc(o)+'</label>').join('')+'</div></div>'})
+  }else if(type==='multi2'||type==='multi3'){
+    nums.forEach(q=>{box+='<div class="gq"><span class="gnum">'+q+'</span><span class="glabel">Choose '+(type==='multi2'?'TWO':'THREE')+'</span><div class="gopts">'+(g.options||[]).map(o=>'<label><input type="checkbox" name="gq'+q+'" data-q="'+q+'" value="'+esc(o)+'"> '+esc(o)+'</label>').join('')+'</div></div>'})
+  }else if(type==='matching'){
+    nums.forEach(q=>{box+='<div class="gq"><span class="gnum">'+q+'</span><select data-q="'+q+'"><option value="">Choose</option>'+(g.options||[]).map(o=>'<option value="'+esc(o)+'">'+esc(o)+'</option>').join('')+'</select></div>'})
+  }else continue;
+  box+='</div>';out=out.slice(0,end)+box+out.slice(end);
+ }
+ return out;
+}
+function library(){S.screen='library';S.test=null;app.innerHTML='<section class="hero"><h1>IELTS Listening Tests</h1><p>'+DATA.length+' practice tests. Start a full test or practise one Part.</p></section><div class="grid">'+DATA.map(t=>'<article class="card"><h3>Listening Test '+esc(t.id)+'</h3><p>'+esc(t.title||'IELTS Listening Practice Test '+t.id)+'</p><div class="row"><button class="btn primary" data-start="'+t.id+'">Start Test</button><button class="btn" data-practice="'+t.id+'">Practice Section</button></div></article>').join('')+'</div>';
+ $$('[data-start]').forEach(b=>b.onclick=()=>start(+b.dataset.start,1,false));$$('[data-practice]').forEach(b=>b.onclick=()=>practicePick(+b.dataset.practice));}
+function practicePick(id){const t=testById(id);app.innerHTML='<section class="hero"><h1>Listening Test '+id+'</h1><p>Choose a Part to practise.</p><div class="row" style="margin-top:12px">'+[1,2,3,4].map(p=>'<button class="btn primary" data-p="'+p+'">Part '+p+'</button>').join('')+'<button class="btn" id="cancel">Cancel</button></div></section>';$$('[data-p]').forEach(b=>b.onclick=()=>start(id,+b.dataset.p,true));$('#cancel').onclick=library}
+function start(id,p=1,practice=false){const t=testById(id);if(!t)return;S.test=t;S.part=p;S.practice=practice;S.answers={};S.result=null;S.reviewMode=false;renderTest()}
+function renderTest(){const t=S.test,p=S.part;let html=t.renderedSections?.[p-1]||'<p>No section content available.</p>';html=groupControls(t,p,html);app.innerHTML='<section class="exam"><div class="examline"><div class="examtitle">'+esc(t.title||'IELTS Listening Test '+t.id)+'</div><div class="spacer"></div><button class="btn small" id="questionsBtn">Questions</button></div><div class="partbar">'+[1,2,3,4].map(x=>'<button class="part '+(x===p?'active':'')+'" data-part="'+x+'">Part '+x+'</button>').join('')+'</div></section><div class="audio"><small>Part '+p+' — audio</small><audio id="player" controls preload="metadata" src="'+esc(audioSrc(t,p))+'"></audio></div><section class="paper" id="paper">'+html+'</section><div class="bottom"><span class="status">'+(S.practice?'Practice Part '+p:'Full test • move between Parts freely')+'</span><button class="btn danger" id="submit">'+(S.practice?'Submit Part':'Submit Test')+'</button></div><div id="qpanel" class="qpanel hidden"></div>';
+ const paper=$('#paper');restore(paper);bind(paper);$$('[data-part]').forEach(b=>b.onclick=()=>switchPart(+b.dataset.part));$('#submit').onclick=submit;$('#questionsBtn').onclick=()=>$('#qpanel').classList.toggle('hidden');updateQPanel();}
+function switchPart(n){save($('#paper'));const old=$('#player');const time=old?.currentTime||0,was=old?!old.paused:false;S.part=n;renderTest();const p=$('#player');if(p){p.currentTime=time;if(was)p.play().catch(()=>{})}window.scrollTo({top:0,behavior:'smooth'})}
+function updateQPanel(){const panel=$('#qpanel');if(!panel)return;let start=S.practice?(S.part-1)*10+1:1,end=S.practice?S.part*10:40;panel.innerHTML='<div class="qpanelhead"><b>Questions</b><button class="btn small" id="closeQ">Close</button></div><div class="qgrid">'+Array.from({length:end-start+1},(_,i)=>{let q=start+i;return '<button class="qbtn '+(answered(q)?'answered':'')+'" data-jump="'+q+'">'+q+'</button>'}).join('')+'</div>';$('#closeQ').onclick=()=>panel.classList.add('hidden');$$('[data-jump]').forEach(b=>b.onclick=()=>{let q=+b.dataset.jump;let target=sectionOf(q);if(target!==S.part){switchPart(target);setTimeout(()=>jumpQ(q),80)}else jumpQ(q);panel.classList.add('hidden')})}
+function jumpQ(q){let el=$('[data-q="'+q+'"]')?.closest('.qline,.gq,.generated-control')||document.getElementById('paper');el.scrollIntoView({behavior:'smooth',block:'center'});el.style.outline='2px solid var(--blue)';setTimeout(()=>el.style.outline='',900)}
+function submit(){save($('#paper'));let qs=S.practice?Array.from({length:10},(_,i)=>(S.part-1)*10+i+1):Array.from({length:40},(_,i)=>i+1);let c=0,w=0,u=0;qs.forEach(q=>{if(!answered(q))u++;else if(isCorrect(q))c++;else w++});S.result={correct:c,wrong:w,unanswered:u,total:qs.length,band:S.practice?null:bandFor(c),qs};S.screen='result';renderResult()}
+function renderResult(){let r=S.result,t=S.test;app.innerHTML='<section class="result"><h2>Test Complete</h2><div class="band">'+(r.band===null?'Part '+S.part:'Band '+r.band)+'</div><div class="stats"><div class="stat"><b>'+r.correct+'</b>Correct</div><div class="stat"><b>'+r.wrong+'</b>Wrong</div><div class="stat"><b>'+r.unanswered+'</b>Unanswered</div><div class="stat"><b>'+r.total+'</b>Total</div></div><div class="reviewActions"><button class="btn primary" id="review">Test Review</button><button class="btn" id="retake">Retake</button><button class="btn" id="all">All Tests</button></div><p class="status">The band conversion is a practice estimate; IELTS notes that exact raw-score boundaries can vary slightly by test version.</p></section><div id="reviewArea"></div>';$('#review').onclick=()=>renderReview(1);$('#retake').onclick=()=>start(t.id,S.practice?S.part:1,S.practice);$('#all').onclick=library}
+function renderReview(p){S.reviewPart=p;const t=S.test,box=$('#reviewArea');let nums=S.result.qs.filter(q=>sectionOf(q)===p);box.innerHTML='<div class="reviewbar">'+[1,2,3,4].filter(x=>S.result.qs.some(q=>sectionOf(q)===x)).map(x=>'<button class="rtab '+(x===p?'active':'')+'" data-rp="'+x+'">Part '+x+' · '+((x-1)*10+1)+'–'+(x*10)+'</button>').join('')+'</div><h2>Test Review — Part '+p+'</h2>'+nums.map(q=>{let ok=isCorrect(q),ans=getA(q),corr=t.answers?.[q]??[];let cls=!answered(q)?'skip':ok?'ok':'bad',lab=!answered(q)?'Unanswered':ok?'Correct':'Wrong';let y=Array.isArray(ans)?ans.filter(Boolean).join(', '):ans;let c=Array.isArray(corr)?corr.join(' / '):corr;return '<article class="reviewcard '+cls+'"><div class="reviewhead"><b>Question '+q+'</b><span class="badge '+cls+'">'+lab+'</span></div><div class="answerbox"><b>Your answer:</b> '+esc(y||'—')+'<br><b>Correct answer:</b> '+esc(c||'—')+'</div></article>'}).join('')+'<details><summary><b>Show Part '+p+' Audio Script / Transcript</b></summary><div class="transcript">'+esc(t.transcriptText?.[p-1]||'No transcript available.')+'</div></details>';
+ $$('[data-rp]').forEach(b=>b.onclick=()=>renderReview(+b.dataset.rp));window.scrollTo({top:0,behavior:'smooth'})}
+$('#homeBtn').onclick=library;$('#focusBtn').onclick=()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()};library();
+})();
+</script>
+</body></html>
